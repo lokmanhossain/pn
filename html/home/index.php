@@ -59,7 +59,7 @@
                 <div class="row featured-1 mb-5 mt-5">
 
 
-                    <div class="col-md-3">
+                    <div class="col-12 col-md-3 order-2 order-md-1">
                         <div class="small-post">
                             <!--post list-->
                             <article class="card card-full hover-a mb-4">
@@ -214,7 +214,7 @@
 
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-12 col-md-6 order-1 order-md-2">
                         <!--Block start-->
                         <div class="block-area">
                             <!-- block title -->
@@ -407,7 +407,7 @@
                         </div>
                         <!-- End block -->
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-12 col-md-3 order-3">
 
                         <!--Advertiser-->
                         <aside class="widget">

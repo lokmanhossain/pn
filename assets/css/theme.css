@@ -4253,6 +4253,18 @@ textarea.form-control-lg {
       align-items: center;
 }
 
+.navbar-toggler , .navbar-toggler-second{
+  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+  font-size: var(--bs-navbar-toggler-font-size);
+  line-height: 1;
+  /* color: var(--bs-navbar-color); */
+  color: var(--bs-black);
+  background-color: transparent;
+  border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+  border-radius: var(--bs-navbar-toggler-border-radius);
+  transition: var(--bs-navbar-toggler-transition);
+}
+/* 
 .navbar-toggler {
   padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
   font-size: var(--bs-navbar-toggler-font-size);
@@ -4262,7 +4274,7 @@ textarea.form-control-lg {
   border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
   border-radius: var(--bs-navbar-toggler-border-radius);
   transition: var(--bs-navbar-toggler-transition);
-}
+} */
 
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
@@ -4295,6 +4307,14 @@ textarea.form-control-lg {
   overflow-y: auto;
 }
 
+@media (min-width: 320px) and (max-width: 575.98px){
+ 
+  .navbar-expand-sm .navbar-nav {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  } 
+}
+
 @media (min-width: 576px) {
   .navbar-expand-sm {
     -ms-flex-wrap: nowrap;
@@ -4302,7 +4322,7 @@ textarea.form-control-lg {
     -ms-flex-pack: start;
         justify-content: flex-start;
   }
-  .navbar-expand-sm .navbar-nav {
+   .navbar-expand-sm .navbar-nav {
     -ms-flex-direction: row;
         flex-direction: row;
   }
@@ -7743,6 +7763,14 @@ textarea.form-control-lg {
 
 .d-none {
   display: none !important;
+}
+
+
+   
+
+.shadow-menu{
+  border-bottom: 2px solid #0000001f;
+  box-shadow: 0 0.333rem 0.333rem 0 #00000040;
 }
 
 .shadow {
@@ -14692,16 +14720,16 @@ p {
   .dropdown-menu .dropdown-menu {
     left: 100%;
   }
-  .showbacktop .logo-showbacktop {
+  /* .showbacktop .logo-showbacktop {
     display: none;
   }
   .showbacktop .logo-showbacktop img {
     display: none;
-  }
+  } */
   .showbacktop.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     width: 100%;
-    top: -54px;
+    top: -63px;
     transition: -webkit-transform 0.2s;
     transition: transform 0.2s;
     transition: transform 0.2s, -webkit-transform 0.2s;
@@ -14733,11 +14761,11 @@ p {
   }
   .showbacktop.bg-black.is-fixed, .showbacktop.bg-secondary.is-fixed, .showbacktop.bg-dark.is-fixed {
     background: rgba(0, 0, 0, 0.95) !important;
-    border-color: var(--bs-gray-700) !important;
+    border-color: #495057 !important;
   }
   .showbacktop.bg-black.is-visible, .showbacktop.bg-secondary.is-visible, .showbacktop.bg-dark.is-visible {
     background: rgba(0, 0, 0, 0.95) !important;
-    border-color: var(--bs-gray-700);
+    border-color: #495057;
     top: -58px;
   }
   .showbacktop.bg-black.is-visible.six-menu, .showbacktop.bg-secondary.is-visible.six-menu, .showbacktop.bg-dark.is-visible.six-menu {
@@ -15384,15 +15412,15 @@ p {
 }
 
 .hamburger-icon span:nth-child(1) {
-  top: 0;
+  top: 0.4rem;
 }
 
 .hamburger-icon span:nth-child(2) {
-  top: 0.6rem;
+  top: 0.8rem;
 }
 
 .hamburger-icon span:nth-child(3) {
-  top: 0.6rem;
+  top: 1.2rem;
 }
 
 .hamburger-icon span:nth-child(4) {
@@ -15425,12 +15453,12 @@ p {
   background: #000;
 }
 
-.navbar-dark .navbar-toggler {
+.navbar-dark .navbar-toggler {   /*.navbar-toggler-second*/
   border: none;
 }
 
 .navbar-dark .hamburger-icon span {
-  background: #fff;
+  background: #000;
 }
 
 .navbar-light .hamburger-icon span {
@@ -21081,3 +21109,40 @@ h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hov
 
  
 /*# sourceMappingURL=theme.css.map */
+
+@media only screen and (min-width: 320px) and (max-width: 991.98px) {
+  .main-menu.navbar {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width:100%;
+}
+
+}
+
+
+@media only screen and (min-width: 992px)  and (max-width: 1200px) {
+  .main-nav-wrap {
+      overflow-x: scroll;
+      white-space: nowrap;
+      width:calc(100% - 200px);
+  }
+  }
+
+
+   /*will think later*/
+  /* @media only screen and (min-width: 1199.98px) { 
+    .main-nav-wrap {
+        overflow-x: scroll;
+        white-space: nowrap;
+        width:calc(100% - 250px); 
+    }
+    } */
+    
+
+@media (max-width: 991.98px) {
+  .logo-showbacktop {
+    display: none !important;
+  }
+}
+ 
